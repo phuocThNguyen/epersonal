@@ -99,6 +99,7 @@ body {
     height: 8vh;
     background-color: #09a0e6;
     border: none;
+    border-radius: 10px;
     padding: 0;
 }
 
@@ -127,9 +128,9 @@ body {
 
 .projects-title {
   font-size: 4rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   margin-left: 5rem;
-  color: 161f2c;
+  color: #161f2c;
 }
 
 .projects {
@@ -148,6 +149,8 @@ body {
     justify-content: space-between;
     height: 55vh;
     background: white;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .project-overview {
@@ -161,7 +164,7 @@ body {
 }
 
 .project-title {
-  width: 70%;
+  width: 75%;
   background: white;
   padding-left: 4%;
   color: #161f2c;
@@ -169,6 +172,7 @@ body {
   position: absolute;
   bottom: 0%;
   left: 0%;
+  border-top-right-radius: 10px;
 }
 
 .project-description {
@@ -188,13 +192,90 @@ body {
   padding: 0.5rem;
   margin-right: 1rem;
   background-color: #bbd4eb;
+  border-radius: 10px;
 }
 
 .contact-section {
     height: 100vh;
     background-color: #161f2c;
+    padding-left: 5rem;
 }
 
 .contact-title {
   color: white;
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.5rem;
+  width: 35%;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #161f2c;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contact-form input {
+  height: 5vh;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  margin-top: 2rem;
+  width: 20%;
+  height: 7vh;
+  background: #09a0e6;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: 0;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.contact-form button:active,
+.contact-form button:focus {
+  outline: none;
+}
+
+.main-footer {
+  background: #151a21;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-footer p {
+  color: rgb(185, 185, 185);
+  font-size: 1rem;
 }
