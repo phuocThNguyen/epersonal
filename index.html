@@ -8,6 +8,7 @@
     <!-- <link rel="shortcut icon" href="favicon.png" /> -->
     <!-- <link rel="stylesheet" href="shared.css" /> -->
     <link rel="stylesheet" href="main.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <section class="landing-section">
@@ -16,47 +17,82 @@
         <nav class="main-nav">
           <ul class="main-nav__items">
             <li class="main-nav__item"><a href="/">Home</a></li>
-            <li class="main-nav__item"><a href="#">Skills</a></li>
-            <li class="main-nav__item"><a href="#">Contact Me</a></li>
+            <li class="main-nav__item"><a href="#projects">Projects</a></li>
+            <li class="main-nav__item"><a href="#contact">Contact Me</a></li>
           </ul>
         </nav>
-    </header>
-    <main class="main-content">
-      <h1 class="main-headline">Never. Stop. Learning.</h1>
-      <ul class="contents">
-        <li class="content">I Deliver Stylish Websites That Are Loved By The Eyes</li>
-        <li class="content">I Build Optimized Softwares That Delight Your Hardwares</li>
-        <li class="content">But, as always...</li>
-        <li class="content"><em>PERFORMANCE</em> over aesthetic</li>
-        <li class="content"><em>QUALITY</em> over quantity</li>
-      </ul>
-      <button class="button--cta">Explore My Works</button>
-    </main>
+      </header>
+      <main class="main-content">
+        <h1 class="main-headline">Never. Stop. Learning.</h1>
+        <ul class="contents">
+          <li class="content">
+            I Deliver Stylish Websites That Are Loved By The Eyes
+          </li>
+          <li class="content">
+            I Build Optimized Softwares That Delight Your Hardwares
+          </li>
+          <li class="content">But, most importantly...</li>
+          <li class="content"><em>PERFORMANCE</em> over aesthetic</li>
+          <li class="content"><em>QUALITY</em> over quantity</li>
+        </ul>
+        <button class="button--cta"><a href="#projects">Explore My Works</a></button>
+      </main>
     </section>
-    <section class="projects-section">
+    <section class="projects-section" id="projects">
+      <h1 class="projects-title">Projects</h1>
       <div class="projects">
-        <article class="project">
-          <h1 class="project-title">AccessArt Web App</h1>
-          <img src="/assets/images/tem.jpg" alt="alt">
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet faucibus enim. 
-            Curabitur pellentesque quis urna sed mollis. Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.</p>
-        </article>
-        <article class="project">
-          <h1 class="project-title">Data Mining</h1>
-          <img src="/assets/images/tem.jpg" alt="alt">
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet faucibus enim. 
-            Curabitur pellentesque quis urna sed mollis. Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.</p>
-        </article>
-        <article class="project">
-          <h1 class="project-title">Professional Units Planner</h1>
-          <img src="/assets/images/tem.jpg" alt="alt">
-          <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet faucibus enim. 
-            Curabitur pellentesque quis urna sed mollis. Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.</p>
-        </article>
+        <a class="project" href="#">
+          <div class="project-overview">
+            <h1 class="project-title">AccessArt Website</h1>
+          </div>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet faucibus enim. Curabitur pellentesque quis urna sed mollis.
+            Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.
+          </p>
+          <ul class="project-stacks">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+        </a>
+        <a href="#" class="project">
+          <div class="project-overview">
+            <h1 class="project-title">Data Mining</h1>
+          </div>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet faucibus enim. Curabitur pellentesque quis urna sed mollis.
+            Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.
+          </p>
+          <ul class="project-stacks">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+        </a>
+        <a href="#" class="project">
+          <div class="project-overview">
+            <h1 class="project-title">Units Planner</h1>
+          </div>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
+            amet faucibus enim. Curabitur pellentesque quis urna sed mollis.
+            Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.
+          </p>
+          <ul class="project-stacks">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+          </ul>
+        </a>
       </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
       <h1 class="contact-title">Contact Me</h1>
     </section>
+    <footer>
+      Something here
+    </footer>
   </body>
 </html>

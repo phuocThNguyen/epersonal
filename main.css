@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+h1, p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -16,10 +28,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Poppins', sans-serif;
-}
-
-h1, p {
-  margin: 0;
 }
 
 .landing-section {
@@ -54,7 +62,6 @@ h1, p {
 
 .main-nav__item a {
   color: #09a0e6;
-  text-decoration: none;
   font-size: 1.3rem;
 }
 
@@ -90,13 +97,16 @@ h1, p {
     margin-top: 6rem;
     width: 16vw;
     height: 8vh;
-    font-size: 1.2rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
     background-color: #09a0e6;
-    color: white;
     border: none;
     padding: 0;
+}
+
+.button--cta a {
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: white;
 }
 
 .button--cta:hover {
@@ -112,23 +122,79 @@ h1, p {
 .projects-section {
     height: 100vh;
     padding: auto;
+    background: #bbd4eb;
+}
+
+.projects-title {
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-left: 5rem;
+  color: 161f2c;
 }
 
 .projects {
+    margin: 5rem 5rem 0rem 5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .project {
-    width: 30%;
+    width: 32%;
+    min-width: 13rem;
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 55vh;
+    background: white;
 }
 
-.project img {
-    width: 17%;
+.project-overview {
+  width: 100%;
+  height: 30vh;
+  background-image: url("/assets/images/tem.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.project-title {
+  width: 70%;
+  background: white;
+  padding-left: 4%;
+  color: #161f2c;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.project-description {
+  color: #161f2c;
+  padding-left: 2%;
+}
+
+.project-stacks {
+  list-style: none;
+  display: flex;
+  margin-top: 0;
+  padding-left: 2%;
+}
+
+.project-stacks li {
+  color: #161f2c;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background-color: #bbd4eb;
 }
 
 .contact-section {
     height: 100vh;
     background-color: #161f2c;
+}
+
+.contact-title {
+  color: white;
 }
