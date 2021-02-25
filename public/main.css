@@ -44,6 +44,29 @@ body {
   align-items: baseline;
 }
 
+.toggle-button {
+  display: none;
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button__bar {
+  width: 100%;
+  height: 0.2rem;
+  background: white;
+  display: block;
+  margin: 0.6rem 0;
+}
+
 .main-header__name {
   font-size: 1.8rem;
   color: white;
@@ -68,13 +91,14 @@ body {
 .main-content {
     display: flex;
     flex-direction: column;
-    margin: 12rem 8rem 0rem 8rem;
+    margin: 6rem 8rem 0rem 8rem;
     font-family: 'Playfair Display', serif;
 }
 
 .main-headline {
     color: white;
     font-size: 4rem;
+    min-width: 50rem;
 }
 
 .contents {
@@ -87,6 +111,7 @@ body {
     font-size: 1.2rem;
     font-style: italic;
     padding-top: 1rem;
+    min-width: 30rem;
 }
 
 .content em {
@@ -143,23 +168,34 @@ body {
 
 .project {
     width: 32%;
-    min-width: 12rem;
+    min-width: 16rem;
     max-width: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50vh;
+    height: 60vh;
     background: white;
     border-radius: 10px;
     overflow: hidden;
     margin-right: 3rem;
 }
 
+.project #accessart {
+  background-image: url("assets/images/accessart.png");
+}
+
+.project #vector {
+  background-image: url("assets/images/vector.png");
+}
+
+.project #planner {
+  background-image: url("assets/images/unit-planner.PNG");
+}
+
 .project-overview {
   width: 100%;
-  height: 25vh;
-  background-image: url("assets/images/tem.jpg");
-  background-position: center;
+  min-height: 30vh;
+  background-position: left top;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -181,12 +217,13 @@ body {
   color: #161f2c;
   padding-left: 2%;
   font-size: .9rem;
+  margin-top: 1rem;
 }
 
 .project-stacks {
   list-style: none;
   display: flex;
-  margin-top: 0;
+  margin-top: 1rem;
   padding-left: 2%;
 }
 
@@ -194,7 +231,7 @@ body {
   color: #161f2c;
   font-size: .7rem;
   padding: 0.5rem;
-  margin-right: 1rem;
+  margin-right: .5rem;
   background-color: #bbd4eb;
   border-radius: 10px;
 }
@@ -233,7 +270,6 @@ body {
   color: #161f2c;
   border: none;
   border-radius: 10px;
-  margin-bottom: 2.5rem;
 }
 
 .contact-form label {
@@ -243,16 +279,17 @@ body {
 
 .contact-form input {
   height: 5vh;
+  margin-bottom: 1rem;
 }
 
 .contact-form textarea {
   resize: none;
+  margin-bottom: 2rem;
 }
 
 .contact-form button {
-  margin-top: 2rem;
   width: 12rem;
-  height: 5vh;
+  height: 6vh;
   background: #09a0e6;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -285,7 +322,8 @@ body {
   font-size: .8rem;
 }
 
-@media only screen and (min-width: 1200px) {
+/* Adjust sizes for larger screen desktop */
+@media only screen and (min-width: 1400px) {
   .main-header {
     height: 8rem;
   }

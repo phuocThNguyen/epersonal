@@ -60,49 +60,47 @@
     <section class="projects-section" id="projects">
       <h1 class="projects-title">Projects</h1>
       <div class="projects">
-        <a class="project" href="#">
-          <div class="project-overview">
+        <a href="#" class="project">
+          <div class="project-overview" id="accessart">
             <h1 class="project-title">AccessArt Website</h1>
           </div>
           <p class="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
-            amet faucibus enim. Curabitur pellentesque quis urna sed mollis.
-            Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.
+            Me and another 3 people in a Capstone project had built an eCommerce Web App
+            called AccessArt, which was mainly to trade (rent, buy or sell) artworks online. 
           </p>
           <ul class="project-stacks">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
+            <li>ReactJS</li>
+            <li>Firebase</li>
+            <li>MaterializeCSS</li>
           </ul>
         </a>
         <a href="#" class="project">
-          <div class="project-overview">
-            <h1 class="project-title">Data Mining</h1>
+          <div class="project-overview" id="vector">
+            <h1 class="project-title">Vector Design Tool</h1>
           </div>
           <p class="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
-            amet faucibus enim. Curabitur pellentesque quis urna sed mollis.
-            Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.
+            Me and 2 other students developed a tool in Java that allows users 
+            to plot different shapes (retangle, ecllipse, circle, line, dot) as well as
+            save and load those shapes into/from .VEC files.
           </p>
           <ul class="project-stacks">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
+            <li>Java</li>
+            <li>JUnit 5</li>
+            <li>Java Swing</li>
           </ul>
         </a>
         <a href="#" class="project">
-          <div class="project-overview">
-            <h1 class="project-title">Units Planner</h1>
+          <div class="project-overview" id="planner">
+            <h1 class="project-title">Study Planner</h1>
           </div>
           <p class="project-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit
-            amet faucibus enim. Curabitur pellentesque quis urna sed mollis.
-            Fusce nisi dui, dignissim vitae finibus vitae, lobortis non lorem.
+            An application that give students their best optimized study plan 
+            . Algorithms was written in both F# and C# to compare 
+            the performance between pure and impure functional programming.
           </p>
           <ul class="project-stacks">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JAVASCRIPT</li>
+            <li>F#</li>
+            <li>C#</li>
           </ul>
         </a>
       </div>
@@ -110,13 +108,13 @@
     <section class="contact-section" id="contact">
       <div class="contact-left-part"></div>
       <h1 class="contact-title">Contact Me</h1>
-      <form action="/" class="contact-form">
+      <form action="/form-submitted/index.html" class="contact-form">
         <label for="name">Name</label>
-        <input type="text" id="name">
+        <input type="text" id="name" name="name">
         <label for="email">Email</label>
-        <input type="email" id="email">
+        <input type="email" id="email" name="email">
         <label for="message">Message</label>
-        <textarea name="name" id="message" cols="30" rows="5"></textarea>
+        <textarea name="message" id="message" cols="30" rows="5"></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
