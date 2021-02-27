@@ -243,12 +243,18 @@ body {
     height: 100vh;
     background-color: #161f2c;
     padding-left: 5rem;
+    padding-right: 20rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.contact-section h1 {
+  color: white;
 }
 
 .contact-title {
-  color: white;
   font-size: 2.5rem;
-  margin-top: 4rem;
 }
 
 .contact-form {
@@ -310,6 +316,13 @@ body {
 .contact-form button:active,
 .contact-form button:focus {
   outline: none;
+}
+
+.option {
+  font-size: 3rem;
+}
+
+.contact-right-part {
 }
 
 .main-footer {
