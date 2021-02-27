@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+:root {
+  --main-dark-color: #161f2c;
+}
 
 * {
   box-sizing: border-box;
@@ -17,6 +23,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -32,7 +44,7 @@ body {
 
 .landing-section {
     height: 100vh;
-    background-color: #161f2c;
+    background-color: var(--main-dark-color);
 }
 
 .main-header {
@@ -73,7 +85,6 @@ body {
 }
 
 .main-nav__items {
-  list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
@@ -103,7 +114,6 @@ body {
 
 .contents {
     margin-top: 1.5rem;
-    list-style: none;
 }
 
 .content {
@@ -155,7 +165,7 @@ body {
   font-size: 2.5rem;
   margin-top: 2rem;
   margin-left: 5rem;
-  color: #161f2c;
+  color: var(--main-dark-color);
 }
 
 .projects {
@@ -183,15 +193,15 @@ body {
 }
 
 .project #accessart {
-  background-image: url("assets/images/accessart.png");
+  background-image: url("assets/images/web.png");
 }
 
 .project #vector {
-  background-image: url("assets/images/vector.png");
+  background-image: url("assets/images/shapes.jpg");
 }
 
 .project #planner {
-  background-image: url("assets/images/unitPlanner.png");
+  background-image: url("assets/images/Fsharp_logo.png");
 }
 
 .project-overview {
@@ -207,7 +217,7 @@ body {
   width: 75%;
   background: white;
   padding-left: 4%;
-  color: #161f2c;
+  color: var(--main-dark-color);
   font-size: 1rem;
   position: absolute;
   bottom: 0%;
@@ -216,21 +226,21 @@ body {
 }
 
 .project-description {
-  color: #161f2c;
+  color: var(--main-dark-color);
   padding-left: 2%;
   font-size: .9rem;
   margin-top: 1rem;
 }
 
 .project-stacks {
-  list-style: none;
   display: flex;
   margin-top: 1rem;
   padding-left: 2%;
+  margin-bottom: 1rem;
 }
 
 .project-stacks li {
-  color: #161f2c;
+  color: var(--main-dark-color);
   font-size: .7rem;
   padding: 0.5rem;
   margin-right: .5rem;
@@ -241,20 +251,19 @@ body {
 
 .contact-section {
     height: 100vh;
-    background-color: #161f2c;
+    background-color: var(--main-dark-color);
     padding-left: 5rem;
-    padding-right: 20rem;
+    padding-right: 5rem;
     display: flex;
     justify-content: space-between;
     padding-top: 4rem;
-}
-
-.contact-section h1 {
-  color: white;
+    position: relative;
 }
 
 .contact-title {
-  font-size: 2.5rem;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
 }
 
 .contact-form {
@@ -263,6 +272,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-family: 'Dancing Script', cursive;
 }
 
 .contact-form input:focus,
@@ -274,16 +284,17 @@ body {
 .contact-form textarea {
   padding: 0.5rem;
   width: 25rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-family: 'Poppins', sans-serif;
-  color: #161f2c;
+  color: var(--main-dark-color);
   border: none;
   border-radius: 10px;
 }
 
 .contact-form label {
   color: white;
-  font-size: 1rem;
+  font-size: 1.7rem;
+  margin-bottom: .3rem;
 }
 
 .contact-form input {
@@ -298,11 +309,11 @@ body {
 
 .contact-form button {
   width: 12rem;
-  height: 6vh;
+  height: 10vh;
   background: #09a0e6;
   color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1rem;
+  font-family: inherit;
+  font-size: 1.6rem;
   font-weight: 700;
   border: 0;
   border-radius: 10px;
@@ -318,11 +329,95 @@ body {
   outline: none;
 }
 
-.option {
+.option-o {
+  color: white;
   font-size: 3rem;
+  font-family: 'Akaya Telivigala', cursive;
+  position: absolute;
+  top: 10%;
+  left: 0%;
+  width: 50%;
+  text-align: right;
+}
+
+.option-r {
+  color: var(--main-dark-color);
+  font-size: 3rem;
+  font-family: 'Akaya Telivigala', cursive;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 5;
 }
 
 .contact-right-part {
+  width: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  /* left: 0%; */
+  left: 50%;
+  width: 50%;
+  height: 100vh;
+  /* width: 30rem;
+  height: 30rem; */
+  background-color: white;
+  opacity: 0.6;
+  z-index: 1;
+  /* border-radius: 10px; */
+}
+
+.platforms-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  z-index: 10;
+  color: black;
+}
+
+.platforms-container h1,
+.platforms-container p {
+  color: var(--main-dark-color);
+  font-family: 'Dancing Script', cursive;
+}
+
+.platforms-container .social-title {
+  margin-top: 1rem;
+  font-size: 2.4rem;
+}
+
+.platforms-container .social-content {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: 1.5rem;
+}
+
+.platform-items {
+  text-align: left;
+  padding-left: 8rem;
+}
+
+.platform-item a {
+  display: flex;
+  color: var(--main-dark-color);
+  margin-bottom: 1rem;
+}
+
+.platform-item img {
+  width: 15%;
+}
+
+.platform-item p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.4rem;
+  padding-left: 2rem;
+  padding-top: 0.7rem;
 }
 
 .main-footer {
@@ -392,6 +487,10 @@ body {
 
   .project-title {
     font-size: 1.2rem;
+  }
+
+  .contact-section {
+    padding-right: 20rem;
   }
 
   .contact-title {
